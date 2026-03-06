@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><meta charset="UTF-8"><title>Science Blog</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>🔬 AI 科普博客</title>
 <style>
-  body{font-family:system-ui;max-width:800px;margin:40px auto;padding:0 20px;
-        background:#0f1117;color:#e4e4e7;}
-  h1{color:#ff7a3d;} a{color:#60a5fa;} li{margin:12px 0;font-size:1.1em;}
-</style></head>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #0f1117;
+    color: #e4e4e7;
+    min-height: 100vh;
+    padding: 0 20px 60px;
+  }
+  header {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 0 40px;
+    border-bottom: 1px solid #27272a;
+  }
+  header h1 { font-size: 2rem; color: #ff7a3d; margin-bottom: 8px; }
+  header p { color: #a1a1aa; font-size: 0.95rem; line-height: 1.6; }
+  .posts {
+    max-width: 860px;
+    margin: 40px auto 0;
+    display: grid;
+    gap: 20px;
+  }
+  .card {
+    display: block;
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 12px;
+    padding: 24px 28px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .card:hover { border-color: #ff7a3d; background: #1c1c20; }
+  .card-date { font-size: 0.78rem; color: #71717a; margin-bottom: 10px; letter-spacing: 0.5px; }
+  .card-title { font-size: 1.2rem; color: #f4f4f5; line-height: 1.5; margin-bottom: 14px; }
+  .card-link { font-size: 0.85rem; color: #ff7a3d; }
+  footer {
+    max-width: 860px;
+    margin: 60px auto 0;
+    text-align: center;
+    color: #52525b;
+    font-size: 0.8rem;
+  }
+</style>
+</head>
 <body>
-<h1>🔬 AI 科普博客</h1>
-<p>由 AI 自动生成的高质量科普文章</p>
-<ul></ul>
-<p style="color:#6b7280;font-size:0.85em;margin-top:40px">
-  Powered by ZenMux API (claude-sonnet-4-6 + nanobanana2)
-</p>
-</body></html>
+<header>
+  <h1>🔬 AI 科普博客</h1>
+  <p>由 Claude + nanobanana2 全自动生成的高质量中文科普文章<br>
+     涵盖 AI 前沿、合成生物学、开源工具等领域</p>
+</header>
+<main class="posts">
+  
+    <a href="posts/20260306-openclaw-ai-robotic-gripper/" class="card">
+      <div class="card-date">2026-03-06</div>
+      <h2 class="card-title">OpenClaw：给 AI 装上机械手</h2>
+      <div class="card-link">阅读全文 →</div>
+    </a>
+    <a href="posts/20260306-ai-scientist-36k-experiments/" class="card">
+      <div class="card-date">2026-03-06</div>
+      <h2 class="card-title">AI 科学家诞生记：GPT-5 独立完成 36,000 次实验</h2>
+      <div class="card-link">阅读全文 →</div>
+    </a>
+    <a href="posts/20260306-ai-research-170-skills/" class="card">
+      <div class="card-date">2026-03-06</div>
+      <h2 class="card-title">AI 科研助手的 170+ 技能包：开源计算库重塑跨学科研究</h2>
+      <div class="card-link">阅读全文 →</div>
+    </a>
+    <a href="posts/20260306-ai-biofoundry-robot-synbio/" class="card">
+      <div class="card-date">2026-03-06</div>
+      <h2 class="card-title">AI 生物工厂：机器人 × 合成生物学</h2>
+      <div class="card-link">阅读全文 →</div>
+    </a>
+    <a href="posts/20260306-ai-biofoundry-revolution/" class="card">
+      <div class="card-date">2026-03-06</div>
+      <h2 class="card-title">AI 驱动的生物工厂革命：当机器人遇见合成生物学</h2>
+      <div class="card-link">阅读全文 →</div>
+    </a>
+</main>
+<footer>
+  Powered by ZenMux API &nbsp;·&nbsp; Claude (claude-sonnet-4.6) + nanobanana2 (Gemini) &nbsp;·&nbsp; GitHub Pages
+</footer>
+</body>
+</html>
